@@ -1,0 +1,211 @@
+body {
+    font-family: 'Georgia', serif;
+    background: #f5f2eb;
+    color: #312821;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header.hero {
+    background: #ece7db;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e1dccd;
+  }
+  .hero-center img.logo {
+    display: block;
+    margin: 0 auto 1rem auto;
+    object-fit: contain;
+    max-width: 100%;
+    box-shadow: 0 3px 10px rgba(76, 54, 29, 0.15);
+  }
+  .hero-center h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0 0 0.5rem 0;
+  }
+  .hero-center p {
+    margin: 0;
+    color: #935333;
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+  }
+  
+  nav {
+    background: #bfa87a;
+    text-align: center;
+    border-bottom: 1px solid #e1dccd;
+  }
+  nav a {
+    display: inline-block;
+    color: #312821;
+    text-decoration: none;
+    padding: 1.2rem 1.6rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background .2s;
+  }
+  nav a:hover {
+    background: #e9e7e1;
+    color: #935333;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2.5rem 1rem 1rem 1rem;
+  }
+  
+  section {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .products h2, .process h2, .visit h2, .story h2 {
+    margin-bottom: 1.3rem;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1rem 0 0 0;
+  }
+  .product {
+    background: #fffaf3;
+    box-shadow: 0 2px 8px rgba(188,165,121,0.09);
+    border-radius: 12px;
+    padding: 1.5rem .8rem 1.2rem .8rem;
+    max-width: 220px;
+    min-width: 180px;
+  }
+  .product img {
+    height: 120px;
+    margin-bottom: 0.7rem;
+    border-radius: 7px;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(120, 91, 54, 0.16);
+  }
+  .product h3 {
+    margin: 0.1rem 0 0.3rem 0;
+  }
+  .product p {
+    margin: 0;
+    font-size: .97rem;
+    color: #5d503c;
+  }
+  
+  .process {
+    background: #ebe3d0;
+    padding: 2rem 0.5rem;
+    border-radius: 7px;
+    margin-bottom: 2.5rem;
+  }
+  .process p {
+    max-width: 700px;
+    margin: auto;
+    color: #675e52;
+    font-size: 1.1rem;
+  }
+  .process img {
+    box-shadow: 0 3px 10px rgba(120, 91, 54, 0.2);
+    object-fit: cover;
+  }
+  
+  .visit-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+  .visit-text {
+    min-width: 200px;
+    max-width: 370px;
+    text-align: left;
+    margin: 0 1rem;
+  }
+  .visit-text h2 {
+    margin-top: 0;
+  }
+  .visit-photo {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(120, 91, 54, 0.2);
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 1.1rem;
+    background: #fff;
+    color: #935333;
+    border: 1.5px solid #935333;
+    padding: 0.6rem 1.4rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: background .15s, color .15s;
+  }
+  .btn:hover {
+    background: #935333;
+    color: #fff;
+  }
+  
+  .story-bg {
+    background: #f7e9cf;
+    border-radius: 9px;
+    padding: 2.1rem .8rem;
+    max-width: 630px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(188,165,121,0.09);
+  }
+  .story-bg img {
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(120, 91, 54, 0.2);
+  }
+  .story-bg p {
+    max-width: 550px;
+    margin: 0.7rem auto 0.7rem auto;
+    color: #655234;
+  }
+  .story-bg h3 {
+    color: #935333;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .product-list { flex-direction: column; align-items: center; }
+    .visit-row { flex-direction: column; }
+    .visit-photo { width: 95vw; max-width: 300px; margin-top: 0.8rem; }
+    .visit-text { text-align: center; }
+    .hero-center h1 { font-size: 2rem; }
+    .story-bg img, .process img { max-width: 95%; height: auto; }
+  }
+  
+  .footer-links {
+    margin-bottom: 0.7rem;
+  }
+  .footer-links a {
+    color: #fffbe6;
+    margin: 0 1.1rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .footer-links a:hover { color: #c4914e; }
+  
+  footer {
+    background: #312821;
+    color: #fffbe6;
+    text-align: center;
+    padding: 2rem 1rem 0.7rem 1rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    border-top: 1px solid #9e8364;
+  }
+  
